@@ -9,6 +9,11 @@
     - Windows: [Docker for Windows](https://docs.docker.com/docker-for-windows/)
     - Linux: package manager
 
+2. Git clone the project and add testing environment:
+
+    $ git clone 
+    $ ln -s .env.testing .env
+
 2. Run project container
 
     $ docker-compose up -d
