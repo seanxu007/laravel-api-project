@@ -14,15 +14,19 @@
     $ git clone 
     $ ln -s .env.testing .env
 
-2. Run project container
+3. Run project container
 
     $ docker-compose up -d
 
-3. Seeding the user table for postman testing
+4. Install library
+
+    $ docker-compose run --rm laravel.test composer install
+
+5. Seeding the user table for postman testing
 
     $ docker-compose exec laravel.test php artisan db:seed
 
-4. Run unit test
+6. Run unit test
 
     $ docker-compose exec laravel.test php artisan test
 
